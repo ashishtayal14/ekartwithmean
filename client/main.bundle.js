@@ -938,12 +938,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var GlobalService = (function () {
     function GlobalService() {
-        this.apiAddress = 'https://meanapp5pm.herokuapp.com/api'; //'http://localhost:1300/api';
-        this.baseAddress = 'https://meanapp5pm.herokuapp.com'; //http://localhost:1300';
+        this.apiAddress = 'https://ekartinmean.herokuapp.com/api'; //'http://localhost:1300/api';
+        this.baseAddress = 'https://ekartinmean.herokuapp.com'; //http://localhost:1300';
         this.cartName = 'cart';
         this.paymentGatewayUrl = 'https://test.payu.in/_payment';
-        this.successUrl = 'https://meanapp5pm.herokuapp.com/api/store/paymentstatus'; //http://localhost:1300/api/store/paymentstatus';
-        this.failedUrl = 'https://meanapp5pm.herokuapp.com/api/store/paymentstatus'; //http://localhost:1300/api/store/paymentstatus';
+        this.successUrl = 'https://ekartinmean.herokuapp.com/api/store/paymentstatus'; //http://localhost:1300/api/store/paymentstatus';
+        this.failedUrl = 'https://ekartinmean.herokuapp.com/api/store/paymentstatus'; //http://localhost:1300/api/store/paymentstatus';
         this.key = 'gtKFFx';
         this.salt = 'eCwWELxi';
     }
