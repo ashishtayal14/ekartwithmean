@@ -5,7 +5,9 @@ const express = require('express'),
     mongoose = require('mongoose'),
     connection = require('./server/config/db'),
     webRoutes = require('./server/routes/webRoutes'),
+    path = require('path'),
     apiRoutes = require('./server/routes/apiRoutes');
+    
 
 const app = express();
 
@@ -16,6 +18,7 @@ app.use(expressSession({
     resave: true
 }));
 
+app.use(express.static(path.join(__dirname, './client')));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
