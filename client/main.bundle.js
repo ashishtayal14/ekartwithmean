@@ -1286,7 +1286,7 @@ var AuthService = (function () {
     };
     ;
     AuthService.prototype.ValidateUser = function (user) {
-        return this.http.post(this.globalService.apiAddress + "/auth", JSON.stringify(user), { headers: this.headers }).catch(function (err) { return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(err); });
+        return this.http.post(this.globalService.apiAddress + "/auth/login", JSON.stringify(user), { headers: this.headers }).catch(function (err) { return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(err); });
     };
     AuthService.prototype.signup = function (user) {
         return this.http

@@ -6,7 +6,7 @@ var jwt = require('jsonwebtoken');
 var superSecret = 'dotnettricks';
 let user;
 const appRoutes = {
-    publicRoutes: ["/store","/store/cart", "/store/paymentstatus", "/auth", "/auth/signup", '/file'],
+    publicRoutes: ["/store","/store/cart", "/store/paymentstatus", "/auth/login", "/auth/signup", '/file'],
     userRoutes: [],
     adminRoutes: ['/category', '/category/create', '/product', '/product/create']
 };

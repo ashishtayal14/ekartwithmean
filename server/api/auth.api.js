@@ -8,7 +8,7 @@ const user = require('../models/user');
 const role = require('../models/role');
 var superSecret = 'dotnettricks';
 
-router.post('/', (req, res) => {
+router.post('/login', (req, res) => { 
     let obj = req.body;
     user.findOne({ email: obj.email, password: obj.password })
         .select('_id name contact email password roles')
@@ -73,7 +73,7 @@ router.post('/signup', (req, res) => {
                 });
             }
             // return a message
-            res.status(httpStatus.CREATED);
+            res.status(httpStatus.CREATED).send("created");
         });
     });
 });
