@@ -1,7 +1,6 @@
 const express = require('express'),
     bodyParser = require('body-parser'),
-    path = require('path'),
-    expressSession = require('express-session'),
+    expressSession= require('express-session'),
     cors = require('cors'),
     mongoose = require('mongoose'),
     connection = require('./server/config/db'),
@@ -22,7 +21,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-app.use(express.static(path.join(__dirname, './client')));
 
 app.use('/api', apiRoutes);
 app.use('/', webRoutes);
