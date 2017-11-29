@@ -44,7 +44,7 @@ router.post('/login', (req, res) => {
                 // return the information including token as JSON
                 res.status(httpStatus.OK).send(authObj);
             } else {
-                res.status(httpStatus.NOT_FOUND).send(authObj);
+                res.status(httpStatus.UNAUTHORIZED).send(authObj);
             }
         });
 });
